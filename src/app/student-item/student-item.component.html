@@ -1,0 +1,6 @@
+<ul class="list-group" *ngFor='let s of student; let i = index;'>
+    <li class="list-group-item list-group-item-primary">სახელი: {{s.name}}</li>
+    <li class="list-group-item list-group-item-secondary">გვარი: {{s.lastName}}</li>
+    <li class="list-group-item list-group-item-success">პირადი ნომერი: {{s.id}}</li>
+<button (click)="onClickMe(i)">Remove</button>
+  </ul>
